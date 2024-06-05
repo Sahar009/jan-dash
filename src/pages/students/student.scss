@@ -1,0 +1,110 @@
+.studentDetails{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.student_render{
+    width: 80%;
+    .header_input_div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        .search_input{
+            width: 400px;
+            height: 40px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            border-radius: 1rem;
+            background-color: var(--color-white);
+            color: var(--dark-blue);
+            .search_icon{
+                font-size: 20px;
+            }
+            input{
+               width: 300px;
+               height: 30px;
+               background: transparent;border: none;
+               outline: none;
+               padding-left: 1rem;
+
+               font-size: 20px;
+              &::placeholder{
+                font-size: 20px;
+              }
+            }
+            
+        }
+    }
+    .details_header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        background-color: whitesmoke;
+        border: none;
+        border-radius: 1rem;
+        table{
+            border-collapse: collapse; 
+            width: 100%;
+            height: 300px;
+            
+            border-radius: 1rem;
+        }
+        .header_detail_row{
+            display: flex;
+            justify-content: space-between;
+        }
+        th{
+            width: 132px;
+            display: flex;
+            color: black;
+            font-size: 15px;
+           
+          }
+        
+    }
+}
+.student_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 0px 5px rgba(0, 0, 0, 0.3);
+    border: none;
+    color: black;
+    border-radius: 1rem;
+    margin: 3rem 2rem 0 0;
+    padding: 5px;
+    transition: all .5s ease ;
+ &:hover{
+       
+        box-shadow: 0px 5px 0px 5px rgba(25, 73, 161, 0.578);
+      }
+    td{
+        width: 160px;
+        font-size: 12px;
+       
+       
+      }
+     
+    .student_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+           
+        }
+    }
+
+}
