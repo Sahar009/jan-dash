@@ -8,6 +8,8 @@ import Dashboard from './pages/dashboard/Dashboard';
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AddStudent from './pages/dashboard/Addstudent/Addstudent';
+
 
 
 
@@ -32,10 +34,14 @@ function App() {
     <Dashboard/>
   </Layout>
 </Sidebar>}/>
-
+<Route path='/add-student'  element={<Sidebar>
+  <Layout>
+    <AddStudent/>
+  </Layout>
+</Sidebar>}/>
    </Routes>
    
-   
+   <AddStudent/>
    
    </BrowserRouter>
    </>
