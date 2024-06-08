@@ -22,7 +22,9 @@ const Student = () => {
 
     setData(studentData);
     setFilteredData(studentData);
+    console.log(studentData);
   }, []);
+  
 
   useEffect(() => {
     const results = data.filter(student =>
@@ -35,6 +37,8 @@ const Student = () => {
     );
     setFilteredData(results) 
   }, [searchTerm, data]);
+
+
 
   return (
     <div className='studentDetails'>
