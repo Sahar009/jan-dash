@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './student.scss';
-import Student_render from './Student_render';
+import Student_render from './StudentRender';
 import { Link } from 'react-router-dom';
 import { CiSearch } from "react-icons/ci";
 import { shortenText } from '../../utils/utility';
