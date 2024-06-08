@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './student_detail.scss';
+import './StudentDetail.scss';
 import { Link, useParams } from 'react-router-dom';
 import { TiArrowBack } from "react-icons/ti";
 
