@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './student.scss';
 import Student_render from './StudentRender';
 import { Link } from 'react-router-dom';
-import { CiSearch } from "react-icons/ci";
+import { CiSearch } from 'react-icons/ci';
 import { shortenText } from '../../utils/utility';
 import ReactPaginate from 'react-paginate';
 
@@ -10,6 +10,8 @@ const Student = () => {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredData, setFilteredData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const [itemsPerPage] = useState(3); 
 
   useEffect(() => {
     const studentData = [
@@ -22,7 +24,6 @@ const Student = () => {
 
     setData(studentData);
     setFilteredData(studentData);
-    console.log(studentData);
   }, []);
   
 
@@ -32,49 +33,75 @@ const Student = () => {
       student.LastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
       student.Gender.toLowerCase().includes(searchTerm.toLowerCase()) ||
       student.Class.toLowerCase().includes(searchTerm.toLowerCase()) 
-     
-   
     );
-    setFilteredData(results) 
+    setFilteredData(results);
   }, [searchTerm, data]);
 
+  const handlePageClick = ({ selected }) => {
+    setCurrentPage(selected);
+  };
 
+  const offset = currentPage * itemsPerPage;
+  const currentPageData = filteredData.slice(offset, offset + itemsPerPage);
 
   return (
     <div className='studentDetails'>
-    <div className='student_render'>
-      <div className='header_input_div'>
-        <h2>Student List</h2>
-        <div className='search_input'>
-          <CiSearch className='search_icon' />
-          <input   type='text'  placeholder='search...' value={searchTerm} onInput={e => setSearchTerm(e.target.value)}/>
+      <div className='student_render'>
+        <div className='header_input_div'>
+          <h2>Student List</h2>
+          <div className='search_input'>
+            <CiSearch className='search_icon' />
+            <input
+              type='text'
+              placeholder='search...'
+              value={searchTerm}
+              onInput={e => setSearchTerm(e.target.value)}
+            />
+          </div>
         </div>
+        <table className='details_header'>
+          <thead>
+            <tr className='header_detail_row'>
+              <th>Id</th>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Class</th>
+            </tr>
+          </thead>
+        </table>
+
+        {/* student list mapping */}
+        {currentPageData.map(({ id, image, FirstName, LastName, Gender, age, Class }) => (
+          <Link to={`/Student_details/${id}`} key={id}>
+            <Student_render
+              id={id}
+              image={image}
+              FirstName={FirstName}
+              LastName={shortenText(LastName, 1)}
+              Gender={Gender}
+              age={age}
+              Class={Class}
+            />
+          </Link>
+        ))}
+
+        <ReactPaginate
+          previousLabel={'previous'}
+          nextLabel={'next'}
+          breakLabel={'...'}
+          breakClassName={'break-me'}
+          pageCount={Math.ceil(filteredData.length / itemsPerPage)}
+          marginPagesDisplayed={2}
+          pageRangeDisplayed={5}
+          onPageChange={handlePageClick}
+          containerClassName={'pagination'}
+          activeClassName={'active'}
+        />
       </div>
-      <table className='details_header'>
-        <thead>
-          <tr className='header_detail_row'>
-            <th>Id</th>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Gender</th>
-            <th>Class</th>
-          </tr>
-        </thead>
-      </table>
-
-      {/* student list mapping  */}
-      {filteredData.map(({ id, image, FirstName, LastName, Gender, age, Class, }) => (
-        <Link to={`/Student_details/${id}`} key={id}>
-          <Student_render  id={id} image={image}  FirstName={FirstName} LastName={shortenText(LastName,1)} Gender={Gender}  age={age} Class={Class} />  </Link>
-        
- 
-      ))}
-
-    <ReactPaginate/>
-    </div>
     </div>
   );
-}
+};
 
 export default Student;
