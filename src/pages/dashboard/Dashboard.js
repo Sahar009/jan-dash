@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import {useEffect,useState, useRef} from 'react';
 import { IoIosSearch } from "react-icons/io";
 import joc2 from '../../asset/joc2.png';
@@ -9,8 +9,7 @@ import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
 import './Calendar.css'
 import './dashboard.scss'
-=======
-import React, { useState } from 'react';
+import React from 'react';
 import './dashboard.scss';
 import { PiDotsThreeBold } from "react-icons/pi";
 import { IoLogoInstagram } from "react-icons/io5";
@@ -43,7 +42,7 @@ const notices = [
     Consistent enforcement of rules ensures fairness and respect among students. It also helps in building a sense of responsibility and self-discipline among students, preparing them for the professional and personal challenges they will face in life. In conclusion, school discipline is not just about enforcing rules; it's about fostering an environment where students can learn and grow to their fullest potential.`
   }
 ];
->>>>>>> 2a5b3a1aa26574c6d471035e39a2625e43a30974
+
 
 const Dashboard = () => {
   const [selectedNotice, setSelectedNotice] = useState(null);
@@ -60,8 +59,8 @@ const Dashboard = () => {
   };
 
   return (
+    
     <div className='container'>
-<<<<<<< HEAD
        <header>
         <nav>
           <h2>Dashboard</h2>
@@ -115,18 +114,12 @@ const Dashboard = () => {
       <div className='joinOurComunnity'>
         < joc2 />
       </div>
+
+      {/*dayo code inserted into stanley"s code*/}
     
       </div>
     
-
-     
-    </div>
-  )
-}
-export default Dashboard
-=======
-      <h2>DashBoard</h2>
-        <Apexchart/>
+      <Apexchart/>
       <div className='notice'>
         <h4>Notice Board</h4>
         <PiDotsThreeBold className='icond' />
@@ -164,5 +157,9 @@ export default Dashboard
   );
 };
 
+     
+
+   
+       
 export default Dashboard;
->>>>>>> 2a5b3a1aa26574c6d471035e39a2625e43a30974
+

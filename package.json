@@ -12,11 +12,11 @@
     "dompurify": "^3.0.5",
     "node-sass": "^9.0.0",
     "react": "^18.2.0",
-<<<<<<< HEAD
+
     "react-calendar": "^5.0.0",
-=======
+
     "react-apexcharts": "^1.4.1",
->>>>>>> 2a5b3a1aa26574c6d471035e39a2625e43a30974
+
     "react-confirm-alert": "^3.0.6",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
