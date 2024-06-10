@@ -66,6 +66,32 @@
           }
         
     }
+   
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+  }
+  
+  .pagination li a {
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .pagination li a:hover {
+    text-decoration: underline;
+  }
+  
+  .pagination .active a {
+    font-weight: bold;
+    color: #000;
+  }
+  
 }
 .student_row{
     display: flex;

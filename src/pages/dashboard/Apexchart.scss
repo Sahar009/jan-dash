@@ -1,0 +1,10 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .chart-container {
+    min-width: 300px;
+  }
+  

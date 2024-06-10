@@ -9,7 +9,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Student from './pages/students/Student';
-import Student_detail from './pages/students/Student_details/Student_detail';
+import StudentDetail from './pages/students/StudentDetails/StudentDetail';
 
 
 
@@ -41,9 +41,9 @@ function App() {
 </Sidebar>}/>\
 <Route path='/Student_details/:id'  element={<Sidebar>
   <Layout>
-   <Student_detail/>
+   <StudentDetail/>
   </Layout>
-</Sidebar>}/>
+</Sidebar>}/> 
 
    </Routes>
    

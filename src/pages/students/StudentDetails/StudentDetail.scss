@@ -37,6 +37,7 @@
         }
         .back_btn{
             font-size: 20px;
+            display: flex;
         }
        
     }
@@ -81,12 +82,11 @@
         }
         .Bottom_Sub_details{
             display: flex;
-            justify-content: center;
+            justify-content: left;
             align-items: center;
         }
         .Bottom_Sub_details h4{
-            margin: 3rem 11rem 0 0 ;
-          
+           margin: 3rem 0rem 0 18rem;
         }
     
 }

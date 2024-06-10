@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 .search_bar{
@@ -247,3 +248,245 @@ userText{
     color: blue;
     border-radius: 2rem;
 }
+=======
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: white;
+    height: 100%;
+  }
+  
+  .container {
+    background-color:transparent;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  .notice {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .notice h2 {
+    margin-top: 3rem;
+    color: #05053d;
+    font-weight: 600;
+  }
+  
+  .icond {
+    color: black;
+    font-size: 3rem;
+  }
+  
+  .create {
+    font-size: 1.5rem;
+    color: black;
+    margin: 10px 0;
+  }
+  
+  .row {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 20%;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .row img {
+    width: 5%;
+    height: 80%;
+    border-radius: 5px;
+  }
+  
+  .text {
+    color: black;
+    font-size: 1rem;
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons .icon {
+    margin-right: 10px;
+  }
+  
+  .view {
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+  }
+  
+  .view .eye {
+    margin-right: 5px;
+    font-size: 1.5rem;
+  }
+  
+  .eye {
+    background: #f7cf9a;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 100%;
+  }
+  
+  .k {
+    font-size: 1.5rem;
+  }
+  
+  .dot {
+    color: black;
+    font-size: 1.5rem;
+  }
+  
+  .notice-details {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notice-details h3 {
+    margin-bottom: 10px;
+  }
+  
+  .notice-details img {
+    width: 50%; 
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .notice-details p {
+    margin-bottom: 10px;
+  }
+  
+  .back-button {
+    background-color: #05053d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .back-button:hover {
+    background-color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .notice h2 {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+    }
+  
+    .icond {
+      font-size: 2rem;
+    }
+  
+    .create {
+      font-size: 1rem;
+    }
+  
+    .row {
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .row img {
+      width: 10%;
+      height: auto;
+    }
+  
+    .text {
+      font-size: 0.9rem;
+      margin-left: 0;
+    }
+  
+    .view {
+      margin-right: 0;
+    }
+  
+    .view .eye {
+      font-size: 1rem;
+    }
+  
+    .k {
+      font-size: 1rem;
+    }
+  
+    .dot {
+      font-size: 1rem;
+    }
+  
+    .notice-details img {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .notice h2 {
+      font-size: 1.2rem;
+    }
+  
+    .icond {
+      font-size: 1.5rem;
+    }
+  
+    .create {
+      font-size: 0.8rem;
+    }
+  
+    .row img {
+      width: 15%;
+    }
+  
+    .text {
+      font-size: 0.8rem;
+    }
+  
+    .view .eye {
+      font-size: 0.8rem;
+    }
+  
+    .k {
+      font-size: 0.8rem;
+    }
+  
+    .dot {
+      font-size: 0.8rem;
+    }
+  
+    .back-button {
+      padding: 5px 10px;
+      font-size: 0.8rem;
+    }
+  
+    .notice-details img {
+      width: 100%;
+    }
+  }
+>>>>>>> 2a5b3a1aa26574c6d471035e39a2625e43a30974
