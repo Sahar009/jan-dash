@@ -38,7 +38,7 @@ function App() {
   <Layout>
     <Student/>
   </Layout>
-</Sidebar>}/>\
+</Sidebar>}/>
 <Route path='/Student_details/:id'  element={<Sidebar>
   <Layout>
    <StudentDetail/>
