@@ -27,11 +27,7 @@ const menu = [
     icon: <RiFileChartLine/>,
     path: "/attendance",
   },
-  {
-    title: "Account",
-    icon: <FaRegChartBar />,
-    path: "/account",
-  },
+ 
   {
     title: "Account",
     icon: <FaRegChartBar />,

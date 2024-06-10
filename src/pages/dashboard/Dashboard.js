@@ -5,7 +5,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { IoLogoFacebook } from "react-icons/io";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { IoIosEye } from "react-icons/io";
-
+import Apexchart from './Apexchart';
 const notices = [
   {
     id: 1,
@@ -48,8 +48,10 @@ const Dashboard = () => {
 
   return (
     <div className='container'>
+      <h2>DashBoard</h2>
+        <Apexchart/>
       <div className='notice'>
-        <h2>Notice Board</h2>
+        <h4>Notice Board</h4>
         <PiDotsThreeBold className='icond' />
       </div>
       <span className='create'>Create a notice or find a message for you!</span>
