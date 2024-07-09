@@ -8,7 +8,7 @@ const Register = () => {
    <div className='registerContainer'>
     <div className='formSection'>
       <div className='formHeader'>
-       <h1>Create your acount</h1>
+       <h1>Create your account</h1>
         <form className='formField'>
           <div className='nameDiv'>
           <input type="text" id="firstname" name="name" required placeholder='Firstname'/>
