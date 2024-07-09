@@ -1,0 +1,132 @@
+.loginContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: #030b6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .loginFormFieldSection{
+        width: 40%;
+        height: 550px;
+       background-color: #fff;
+       border-radius: 5rem;
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+      .loginHeader{
+        text-align: center;
+        margin-top: 2rem;
+        color: blue;
+      }
+      .loginSection{
+        width: 100%;
+        height: 100%;
+        ;
+      }
+      .loginForm{
+        padding: 0px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .inputDiv{
+        width: 100%;
+        height: 100%;
+      }
+      label{
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: .5rem;
+        color: blue;
+      }
+      input{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 3rem;
+        border: 2px solid blue;
+        border-radius: 1rem;
+        padding-left: 1rem;
+        font-size: 16px;
+        outline: none;
+        
+      }
+      .loginBtn{
+        width: 350px;
+        height: 50px;
+        background-color: blue;
+        border: none;
+        outline: none;
+        border-radius: 1rem;
+        color: #fff;
+        font-size: 18px;
+        transition: 1s ease;
+      }
+      .loginBtn:hover{
+        background-color: #030b6b;
+      }
+
+      .otherLogin{
+        text-align: center;
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .otherLogin:before, .otherLogin::after{
+        content: '';
+        width: 100px;
+        display: block;
+        height: 1px;
+       margin: 0 1rem;
+       background-color: black;
+
+      }
+      .loginGoogleDiv{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        .loginGoogleBtn{
+            width: 250px;
+            height: 40px;
+            border-radius: .8rem;
+            border: 1px solid blue;
+            background-color: transparent;
+            font-weight: 400;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .loginGithubBtn{
+            width: 250px;
+            height: 40px;
+            border-radius: .8rem;
+            border: 1px solid blue;
+            background-color: transparent;
+            font-weight: 400;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .loginGithubBtn:hover,.loginGoogleBtn:hover{
+            border: 1px solid #030b6b;
+          }
+     }
+     .CreateAccount{
+        padding: 10px 50px;
+        margin-top: 2rem;
+     }
+     .signUpLink{
+       text-decoration: underline;
+       color: blue;
+     }
+     .signUpLink:hover{
+        color: #030b6b;
+     }
+    }
+}
