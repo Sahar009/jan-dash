@@ -10,6 +10,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Student from './pages/students/Student';
 import StudentDetail from './pages/students/StudentDetails/StudentDetail';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
 
 
 
@@ -25,8 +27,8 @@ function App() {
    
    <Routes>
 <Route path='/' element={<Home/>}/>
-{/* <Route path='/login' element={<Login/>}/>
-<Route path="/register" element={<Register/>} /> */}
+<Route path='/login' element={<Login/>}/>
+<Route path="/register" element={<Register/>} />
 
 
 <Route path='/dashboard' element={<Sidebar>
