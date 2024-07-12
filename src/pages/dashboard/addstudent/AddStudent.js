@@ -64,7 +64,7 @@ function AddStudent(props) {
               value="female" onChange={addStudentHandler}></input><br/>
             </div>
             <div className="content">
-              Dob:  <input className=" dob field" type="text" name="dob"
+              Dob:  <input className=" dob field" type="date" name="dob"
               value={student.dob || ""} onChange={addStudentHandler}></input><br/>
             </div>
             <div className="content">
