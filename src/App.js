@@ -12,7 +12,7 @@ import Student from './pages/students/Student';
 import StudentDetail from './pages/students/StudentDetails/StudentDetail';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
-
+import AddStudent from './pages/dashboard/addstudent/AddStudent'
 
 
 
@@ -41,6 +41,12 @@ function App() {
     <Student/>
   </Layout>
 </Sidebar>}/>
+<Route path='/add-student'  element={<Sidebar>
+  <Layout>
+    <AddStudent />
+  </Layout>
+</Sidebar>}/>
+
 <Route path='/Student_details/:id'  element={<Sidebar>
   <Layout>
    <StudentDetail/>
