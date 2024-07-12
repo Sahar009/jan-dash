@@ -53,7 +53,7 @@ function AddStudent(props) {
               value={student.address || ""} onChange={addStudentHandler}></input><br/>
             </div>
             <div className="content">
-              Age: <input className=" age field" type="text" name="age" placeholder="Enter your age" maxlength="2" pattern="^[0-9]{2}$"
+              Age: <input className=" age field" type="number" name="age" placeholder="Enter your age" maxlength="2" pattern="^[0-9]{2}$"
               required title="Enter numbers only"
             value={student.age || ""} onChange={addStudentHandler}></input><br/>
             </div>
