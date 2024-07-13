@@ -1,3 +1,6 @@
+
+
+
 .card {
   max-width: 600px;
   margin: 0 auto;
@@ -5,7 +8,11 @@
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- 
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  align-items: left; 
+  justify-content: center; 
 }
 
 .card h1 {
@@ -15,7 +22,8 @@
 
 .inputfield {
   margin-bottom: 15px;
-  width: 70%;
+  width: 60%;
+  align-items: center;
 }
 
 label {
@@ -26,9 +34,7 @@ label {
 }
 
 input[type="text"], 
-input[type="radio"],
-input[type="date"]
- {
+input[type="date"] {
   width: calc(100% - 20px);
   padding: 10px;
   margin-top: 5px;
@@ -37,18 +43,17 @@ input[type="date"]
   box-sizing: border-box;
 }
 
-input[type="number"]{
-width: 110px;
+input[type="number"] {
+  width: 110px;
 }
 
-.gender-label {
-  display: inline-block;
-  margin-right: 10px;
+.options {
+  cursor: pointer;
 }
 
 .btn {
   display: block;
-  width: 100%;
+  width: 90%;
   padding: 10px;
   background-color: #007BFF;
   color: white;
@@ -60,4 +65,14 @@ width: 110px;
 
 .btn:hover {
   background-color: #0056b3;
+}
+
+.section-2 {
+  background-color: black;
+  width: 150px;
+  height: 150px;
+  position: absolute; 
+  top: 118px; 
+  right: 60px; 
+  
 }
