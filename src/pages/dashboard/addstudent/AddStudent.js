@@ -1,4 +1,4 @@
-import './addstudent.css';
+import './addstudent.scss';
 
 
 
